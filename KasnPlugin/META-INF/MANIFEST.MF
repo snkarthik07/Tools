@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: KasnPlugin Plug-in
+Bundle-SymbolicName: KasnPlugin; singleton:=true
+Bundle-Version: 1.0.0
+Bundle-ClassPath: KasnPlugin.jar
+Bundle-Activator: kasnplugin.Activator
+Bundle-Vendor: KASN
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Eclipse-LazyStart: true

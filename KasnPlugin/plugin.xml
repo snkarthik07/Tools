@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            name="Kasn Category"
+            id="KasnPlugin">
+      </category>
+      <view
+            name="Class Finder"
+            icon="icons/sample.gif"
+            category="Kasn Category"
+            class="kasnplugin.views.SampleView"
+            id="kasnplugin.views.SampleView">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            id="KasnPlugin.actionSet1"
+            label="Kasn ActionSet"
+            visible="true">
+         <menu
+               id="KasnPlugin.workbenchMenu"
+               label="KasnMenu"
+               path="additions">
+            <groupMarker
+                  name="content">
+            </groupMarker>
+            <separator
+                  name="additions">
+            </separator>
+         </menu>
+         <action
+               class="kasnplugin.views.OpenKasnViewActionDelegate"
+               icon="icons/sample.gif"
+               id="KasnPlugin.openSampleView"
+               label="Open Kasn View"
+               menubarPath="KasnPlugin.workbenchMenu/content"
+               toolbarPath="Normal/additions"
+               tooltip="Opens the favorites view in the current workbench page">
+         </action>
+      </actionSet>
+   </extension>
+
+</plugin>
